@@ -7,6 +7,7 @@ Convenience POM to include most [SemanticCMS Core](https://semanticcms.com/core/
 * [GitHub](https://github.com/aoindustries/semanticcms-core-all)
 
 ## Modules Included
+* [SemanticCMS Core BreadcrumbList JSON-LD](https://semanticcms.com/core/breadcrumblist-json-ld/)
 * [SemanticCMS Core Model](https://semanticcms.com/core/model/)
 * [SemanticCMS Core Servlet](https://semanticcms.com/core/servlet/)
 * [SemanticCMS Core Sitemap](https://semanticcms.com/core/sitemap/)
