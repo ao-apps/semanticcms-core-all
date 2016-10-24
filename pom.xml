@@ -35,15 +35,24 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 	<version>1.3.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
+	<properties>
+		<bookPath>/core/all</bookPath>
+		<shortTitle>All</shortTitle>
+		<javadoc.breadcrumbs><![CDATA[<a target="_top" href="${project.parent.parent.url}">${project.parent.parent.name}</a>
+/ <a target="_top" href="${project.parent.url}">Core</a>
+/ <a target="_top" href="${project.url}">${shortTitle}</a>]]></javadoc.breadcrumbs>
+	</properties>
+
 	<name>SemanticCMS Core All</name>
-	<url>https://semanticcms.com/core/all/</url>
+	<url>https://semanticcms.com${bookPath}/</url><!-- Can't inherit due to multi-module -->
 	<description>Convenience POM to include most SemanticCMS Core features, not including documentation or examples.</description>
 	<inceptionYear>2016</inceptionYear>
 
 	<scm>
-		<connection>scm:git:git://github.com/aoindustries/semanticcms-core-all.git</connection>
-		<developerConnection>scm:git:git@github.com:aoindustries/semanticcms-core-all.git</developerConnection>
-		<url>https://github.com/aoindustries/semanticcms-core-all</url>
+		<!-- Can't inherit due to multi-module -->
+		<connection>scm:git:git://github.com/aoindustries/${project.artifactId}.git</connection>
+		<developerConnection>scm:git:git@github.com:aoindustries/${project.artifactId}.git</developerConnection>
+		<url>https://github.com/aoindustries/${project.artifactId}</url>
 		<tag>HEAD</tag>
 	</scm>
 
