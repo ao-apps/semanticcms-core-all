@@ -38,9 +38,6 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 	<properties>
 		<bookPath>/core/all</bookPath>
 		<shortTitle>All</shortTitle>
-		<javadoc.breadcrumbs><![CDATA[<a target="_top" href="${project.parent.parent.url}">${project.parent.parent.name}</a>
-/ <a target="_top" href="${project.parent.url}">Core</a>
-/ <a target="_top" href="${project.url}">${shortTitle}</a>]]></javadoc.breadcrumbs>
 	</properties>
 
 	<name>SemanticCMS Core All</name>
