@@ -26,18 +26,15 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 
 	<parent>
 		<groupId>com.semanticcms</groupId>
-		<artifactId>semanticcms-core</artifactId>
-		<version>1.5.1-SNAPSHOT</version>
+		<artifactId>semanticcms-parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../../parent/pom.xml</relativePath>
 	</parent>
 
 	<groupId>com.semanticcms</groupId>
 	<artifactId>semanticcms-core-all</artifactId>
 	<version>1.3.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-
-	<properties>
-		<shortTitle>All</shortTitle>
-	</properties>
 
 	<name>SemanticCMS Core All</name>
 	<url>https://semanticcms.com/core/all/</url>
