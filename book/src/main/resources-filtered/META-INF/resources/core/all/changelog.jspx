@@ -37,7 +37,7 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-10-30T16:29:19-0500"
-		dateModified="2017-07-22T16:49:16-0500"
+		dateModified="2017-07-29T18:32:56-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-core-all:pom.version}" />
@@ -54,6 +54,7 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 				scmUrl="@{documented.scm.url}"
 			>
 				<ul>
+					<li>Updated version of <core:link book="/core/model" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
 				</ul>
