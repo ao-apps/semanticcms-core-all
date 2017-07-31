@@ -34,7 +34,7 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="@{documented.shortTitle}"
 		description="@{documented.description}"
 		datePublished="2016-10-18T18:08:00-0500"
-		dateModified="2017-07-18T20:35:30-0500"
+		dateModified="2017-07-31T12:04:18-0500"
 	>
 		<core:child page="changelog.jspx" />
 		<ao:include
@@ -63,6 +63,12 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 				<li><core:link book="/core/breadcrumblist-json-ld" page="/index.jspx" /></li>
 				<li><core:link book="/core/canonical" page="/index.jspx" /></li>
 				<li><core:link book="/core/model" page="/index.jspx" /></li>
+				<li><core:link book="/core/repository" page="/index.jspx" />
+					<ul>
+						<li><core:link book="/core/repository/local" page="/index.jspx" /></li>
+						<li><core:link book="/core/repository/missing" page="/index.jspx" /></li>
+					</ul>
+				</li>
 				<li><core:link book="/core/servlet" page="/index.jspx" /></li>
 				<li><core:link book="/core/sitemap" page="/index.jspx" /></li>
 				<li><core:link book="/core/style" page="/index.jspx" /></li>
