@@ -37,7 +37,7 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-10-30T16:29:19-0500"
-		dateModified="2017-07-31T12:53:55-0500"
+		dateModified="2017-08-01T00:04:39-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-core-all:pom.version}" />
@@ -54,9 +54,11 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 				scmUrl="@{documented.scm.url}"
 			>
 				<ul>
+					<li>Updated version of <core:link book="/core/breadcrumblist-json-ld" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/core/model" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/core/theme-base" page="/index.jspx" />.</li>
 					<li>New module <core:link book="/core/repository" page="/index.jspx" />.</li>
 					<li>New module <core:link book="/core/repository/local" page="/index.jspx" />.</li>
 					<li>New module <core:link book="/core/repository/missing" page="/index.jspx" />.</li>
