@@ -39,6 +39,8 @@ Convenience POM to include most [SemanticCMS Core](https://semanticcms.com/core/
 * [SemanticCMS Core Repository](https://semanticcms.com/core/repository/)
     * [SemanticCMS Core Repository Local](https://semanticcms.com/core/repository/local/)
     * [SemanticCMS Core Repository Missing](https://semanticcms.com/core/repository/missing/)
+* [SemanticCMS Core Resources](https://semanticcms.com/core/resources/)
+    * [SemanticCMS Core Resources Servlet](https://semanticcms.com/core/resources/servlet/)
 * [SemanticCMS Core Servlet](https://semanticcms.com/core/servlet/)
 * [SemanticCMS Core Sitemap](https://semanticcms.com/core/sitemap/)
 * [SemanticCMS Core Style](https://semanticcms.com/core/style/)
