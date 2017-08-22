@@ -37,7 +37,7 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-10-30T16:29:19-0500"
-		dateModified="2017-08-19T18:57:56-0500"
+		dateModified="2017-08-20T23:00:40-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-core-all:pom.version}" />
@@ -62,7 +62,10 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 					<li>Updated version of <core:link book="/core/theme-base" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/core/view-content" page="/index.jspx" />.</li>
 					<li>New module <core:link book="/core/pages" page="/index.jspx" />.</li>
+					<li>New module <core:link book="/core/pages/jsp" page="/index.jspx" />.</li>
+					<li>New module <core:link book="/core/pages/jspx" page="/index.jspx" />.</li>
 					<li>New module <core:link book="/core/pages/servlet" page="/index.jspx" />.</li>
+					<li>New module <core:link book="/core/pages/union" page="/index.jspx" />.</li>
 					<li>New module <core:link book="/core/resources" page="/index.jspx" />.</li>
 					<li>New module <core:link book="/core/resources/servlet" page="/index.jspx" />.</li>
 				</ul>
