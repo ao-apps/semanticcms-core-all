@@ -54,20 +54,20 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 				scmUrl="@{documented.scm.url}"
 			>
 				<ul>
-					<li>Updated version of <core:link book="/core/breadcrumblist-json-ld" page="/index.jspx" />.</li>
-					<li>Updated version of <core:link book="/core/model" page="/index.jspx" />.</li>
-					<li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
-					<li>Updated version of <core:link book="/core/sitemap" page="/index.jspx" />.</li>
-					<li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
-					<li>Updated version of <core:link book="/core/theme-base" page="/index.jspx" />.</li>
-					<li>Updated version of <core:link book="/core/view-content" page="/index.jspx" />.</li>
-					<li>New module <core:link book="/core/pages" page="/index.jspx" />.</li>
-					<li>New module <core:link book="/core/pages/jsp" page="/index.jspx" />.</li>
-					<li>New module <core:link book="/core/pages/jspx" page="/index.jspx" />.</li>
-					<li>New module <core:link book="/core/pages/servlet" page="/index.jspx" />.</li>
-					<li>New module <core:link book="/core/pages/union" page="/index.jspx" />.</li>
-					<li>New module <core:link book="/core/resources" page="/index.jspx" />.</li>
-					<li>New module <core:link book="/core/resources/servlet" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/core/breadcrumblist-json-ld" page="/" />.</li>
+					<li>Updated version of <core:link book="/core/model" page="/" />.</li>
+					<li>Updated version of <core:link book="/core/servlet" page="/" />.</li>
+					<li>Updated version of <core:link book="/core/sitemap" page="/" />.</li>
+					<li>Updated version of <core:link book="/core/taglib" page="/" />.</li>
+					<li>Updated version of <core:link book="/core/theme-base" page="/" />.</li>
+					<li>Updated version of <core:link book="/core/view-content" page="/" />.</li>
+					<li>New module <core:link book="/core/pages" page="/" />.</li>
+					<li>New module <core:link book="/core/pages/jsp" page="/" />.</li>
+					<li>New module <core:link book="/core/pages/jspx" page="/" />.</li>
+					<li>New module <core:link book="/core/pages/servlet" page="/" />.</li>
+					<li>New module <core:link book="/core/pages/union" page="/" />.</li>
+					<li>New module <core:link book="/core/resources" page="/" />.</li>
+					<li>New module <core:link book="/core/resources/servlet" page="/" />.</li>
 				</ul>
 			</changelog:release>
 		</c:if>
@@ -96,7 +96,7 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 		>
 			<ul>
 				<li>New <ao:a href="https://aoindustries.com/ao-oss-parent/">AO OSS Parent</ao:a> POM to simplify <code>pom.xml</code> files.</li>
-				<li>Project documentation moved to per-project book in <core:link book="/" page="/index.jspx" /> format.</li>
+				<li>Project documentation moved to per-project book in <core:link book="/" page="/" /> format.</li>
 				<li>Added changelog as top-level project link.</li>
 			</ul>
 		</changelog:release>

@@ -36,7 +36,7 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 		datePublished="2016-10-18T18:08:00-0500"
 		dateModified="2017-08-20T23:00:40-0500"
 	>
-		<core:child page="changelog.jspx" />
+		<core:child page="changelog" />
 		<ao:include
 			page="/ao-badges/badges.inc.jspx"
 			arg.projectStatus="${currentPage.property.projectStatus}"
@@ -48,40 +48,40 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 			arg.license="${currentPage.property.license}"
 		/>
 		<p>
-			Convenience POM to include most <core:link book="/core" page="/index.jspx" /> features, not including documentation or examples.
+			Convenience POM to include most <core:link book="/core" page="/" /> features, not including documentation or examples.
 		</p>
 		<section:section label="Project Links">
 			<ul>
-				<li><core:link page="index.jspx">Project Home</core:link></li>
-				<li><core:link page="changelog.jspx">Changelog</core:link></li>
+				<li><core:link page="/">Project Home</core:link></li>
+				<li><core:link page="changelog">Changelog</core:link></li>
 				<li><ao:a href="https://search.maven.org/#search%7Cgav%7C1%7Cg:%22@{documented.groupId}%22%20AND%20a:%22@{documented.artifactId}%22">Maven Central Repository</ao:a></li>
 				<li><ao:a href="@{documented.scm.url}">GitHub</ao:a></li>
 			</ul>
 		</section:section>
 		<section:section label="Modules Included">
 			<ul>
-				<li><core:link book="/core/breadcrumblist-json-ld" page="/index.jspx" /></li>
-				<li><core:link book="/core/canonical" page="/index.jspx" /></li>
-				<li><core:link book="/core/model" page="/index.jspx" /></li>
-				<li><core:link book="/core/pages" page="/index.jspx" />
+				<li><core:link book="/core/breadcrumblist-json-ld" page="/" /></li>
+				<li><core:link book="/core/canonical" page="/" /></li>
+				<li><core:link book="/core/model" page="/" /></li>
+				<li><core:link book="/core/pages" page="/" />
 					<ul>
-						<li><core:link book="/core/pages/jsp" page="/index.jspx" /></li>
-						<li><core:link book="/core/pages/jspx" page="/index.jspx" /></li>
-						<li><core:link book="/core/pages/servlet" page="/index.jspx" /></li>
-						<li><core:link book="/core/pages/union" page="/index.jspx" /></li>
+						<li><core:link book="/core/pages/jsp" page="/" /></li>
+						<li><core:link book="/core/pages/jspx" page="/" /></li>
+						<li><core:link book="/core/pages/servlet" page="/" /></li>
+						<li><core:link book="/core/pages/union" page="/" /></li>
 					</ul>
 				</li>
-				<li><core:link book="/core/resources" page="/index.jspx" />
+				<li><core:link book="/core/resources" page="/" />
 					<ul>
-						<li><core:link book="/core/resources/servlet" page="/index.jspx" /></li>
+						<li><core:link book="/core/resources/servlet" page="/" /></li>
 					</ul>
 				</li>
-				<li><core:link book="/core/servlet" page="/index.jspx" /></li>
-				<li><core:link book="/core/sitemap" page="/index.jspx" /></li>
-				<li><core:link book="/core/style" page="/index.jspx" /></li>
-				<li><core:link book="/core/taglib" page="/index.jspx" /></li>
-				<li><core:link book="/core/theme-base" page="/index.jspx" /></li>
-				<li><core:link book="/core/view-content" page="/index.jspx" /></li>
+				<li><core:link book="/core/servlet" page="/" /></li>
+				<li><core:link book="/core/sitemap" page="/" /></li>
+				<li><core:link book="/core/style" page="/" /></li>
+				<li><core:link book="/core/taglib" page="/" /></li>
+				<li><core:link book="/core/theme-base" page="/" /></li>
+				<li><core:link book="/core/view-content" page="/" /></li>
 			</ul>
 		</section:section>
 	</core:page>
