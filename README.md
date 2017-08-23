@@ -39,6 +39,7 @@ Convenience POM to include most [SemanticCMS Core](https://semanticcms.com/core/
 * [SemanticCMS Core Pages](https://semanticcms.com/core/pages/)
     * [SemanticCMS Core Pages JSP](https://semanticcms.com/core/pages/jsp/)
     * [SemanticCMS Core Pages JSPX](https://semanticcms.com/core/pages/jspx/)
+    * [SemanticCMS Core Pages Local](https://semanticcms.com/core/pages/local/)
     * [SemanticCMS Core Pages Servlet](https://semanticcms.com/core/pages/servlet/)
     * [SemanticCMS Core Pages Union](https://semanticcms.com/core/pages/union/)
 * [SemanticCMS Core Resources](https://semanticcms.com/core/resources/)
