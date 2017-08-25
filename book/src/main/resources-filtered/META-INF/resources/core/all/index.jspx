@@ -34,7 +34,7 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="@{documented.shortTitle}"
 		description="@{documented.description}"
 		datePublished="2016-10-18T18:08:00-0500"
-		dateModified="2017-08-23T15:16:55-0500"
+		dateModified="2017-08-25T17:03:47-0500"
 	>
 		<core:child page="changelog" />
 		<ao:include
@@ -70,6 +70,12 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 						<li><core:link book="/core/pages/local" page="/" /></li>
 						<li><core:link book="/core/pages/servlet" page="/" /></li>
 						<li><core:link book="/core/pages/union" page="/" /></li>
+					</ul>
+				</li>
+				<li><core:link book="/core/renderer" page="/" />
+					<ul>
+						<li><core:link book="/core/renderer/html" page="/" /></li>
+						<li><core:link book="/core/renderer/servlet" page="/" /></li>
 					</ul>
 				</li>
 				<li><core:link book="/core/resources" page="/" />
