@@ -35,6 +35,7 @@ Convenience POM to include most [SemanticCMS Core](https://semanticcms.com/core/
 ## Modules Included
 * [SemanticCMS Core BreadcrumbList JSON-LD](https://semanticcms.com/core/breadcrumblist-json-ld/)
 * [SemanticCMS Core Canonical](https://semanticcms.com/core/canonical/)
+* [SemanticCMS Core Controller](https://semanticcms.com/core/controller/)
 * [SemanticCMS Core Model](https://semanticcms.com/core/model/)
 * [SemanticCMS Core Pages](https://semanticcms.com/core/pages/)
     * [SemanticCMS Core Pages JSP](https://semanticcms.com/core/pages/jsp/)
