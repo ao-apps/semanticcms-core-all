@@ -1,4 +1,4 @@
-# [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://aoindustries.com/) [SemanticCMS](https://semanticcms.com/) / [Core](https://semanticcms.com/core/) / [All](https://semanticcms.com/core/all/)
+# [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://github.com/aoindustries) [SemanticCMS](https://github.com/aoindustries/semanticcms) / [Core](https://github.com/aoindustries/semanticcms-core) / [All](https://github.com/aoindustries/semanticcms-core-all)
 <p>
 	<a href="https://aoindustries.com/life-cycle#project-current-stable">
 		<img src="https://semanticcms.com/ao-badges/project-current-stable.svg" alt="project: current stable" />
@@ -24,7 +24,7 @@
 	</a>
 </p>
 
-Convenience POM to include most [SemanticCMS Core](https://semanticcms.com/core/) features, not including documentation or examples.
+Convenience POM to include most [SemanticCMS Core](https://github.com/aoindustries/semanticcms-core) features, not including documentation or examples.
 
 ## Project Links
 * [Project Home](https://semanticcms.com/core/all/)
@@ -33,15 +33,15 @@ Convenience POM to include most [SemanticCMS Core](https://semanticcms.com/core/
 * [GitHub](https://github.com/aoindustries/semanticcms-core-all)
 
 ## Modules Included
-* [SemanticCMS Core BreadcrumbList JSON-LD](https://semanticcms.com/core/breadcrumblist-json-ld/)
-* [SemanticCMS Core Canonical](https://semanticcms.com/core/canonical/)
-* [SemanticCMS Core Model](https://semanticcms.com/core/model/)
-* [SemanticCMS Core Servlet](https://semanticcms.com/core/servlet/)
-* [SemanticCMS Core Sitemap](https://semanticcms.com/core/sitemap/)
-* [SemanticCMS Core Style](https://semanticcms.com/core/style/)
-* [SemanticCMS Core Taglib](https://semanticcms.com/core/taglib/)
-* [SemanticCMS Core Theme Base](https://semanticcms.com/core/theme-base/)
-* [SemanticCMS Core View Content](https://semanticcms.com/core/view-content/)
+* [SemanticCMS Core BreadcrumbList JSON-LD](https://github.com/aoindustries/semanticcms-core-breadcrumblist-json-ld)
+* [SemanticCMS Core Canonical](https://github.com/aoindustries/semanticcms-core-canonical)
+* [SemanticCMS Core Model](https://github.com/aoindustries/semanticcms-core-model)
+* [SemanticCMS Core Servlet](https://github.com/aoindustries/semanticcms-core-servlet)
+* [SemanticCMS Core Sitemap](https://github.com/aoindustries/semanticcms-core-sitemap)
+* [SemanticCMS Core Style](https://github.com/aoindustries/semanticcms-core-style)
+* [SemanticCMS Core Taglib](https://github.com/aoindustries/semanticcms-core-taglib)
+* [SemanticCMS Core Theme Base](https://github.com/aoindustries/semanticcms-core-theme-base)
+* [SemanticCMS Core View Content](https://github.com/aoindustries/semanticcms-core-view-content)
 
 ## Contact Us
 For questions or support, please [contact us](https://aoindustries.com/contact):
