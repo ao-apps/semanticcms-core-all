@@ -32,7 +32,7 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 	<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><version>1.4.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>SemanticCMS 1 Core All</name>
+	<name>SemanticCMS Core All</name>
 	<url>https://semanticcms.com/core/all/</url>
 	<description>Convenience POM to include most SemanticCMS Core features, not including documentation or examples.</description>
 	<inceptionYear>2016</inceptionYear>
