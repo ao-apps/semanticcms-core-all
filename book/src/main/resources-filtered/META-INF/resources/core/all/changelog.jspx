@@ -65,7 +65,6 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 		>
 			<ul>
 				<li>Minimum Java version changed from 1.6 to 1.7.</li>
-				<li>Updated dependencies.</li>
 				<li>Updated version of <core:link book="/core/breadcrumblist-json-ld" page="/index.jspx" />.</li>
 				<li>Updated version of <core:link book="/core/model" page="/index.jspx" />.</li>
 				<li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
