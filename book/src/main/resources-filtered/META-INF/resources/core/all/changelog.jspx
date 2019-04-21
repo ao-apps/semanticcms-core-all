@@ -37,7 +37,7 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-10-30T16:29:19-0500"
-		dateModified="2019-04-20T19:16:58-0500"
+		dateModified="2019-04-20T21:17:33-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-core-all:pom.version}" />
@@ -54,7 +54,10 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 				scmUrl="@{documented.scm.url}"
 			>
 				<ul>
+					<li>Minimum Java version changed from 1.6 to 1.7.</li>
+					<li>Updated dependencies.</li>
 					<li>Updated version of <core:link book="/core/breadcrumblist-json-ld" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/core/model" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/core/sitemap" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
