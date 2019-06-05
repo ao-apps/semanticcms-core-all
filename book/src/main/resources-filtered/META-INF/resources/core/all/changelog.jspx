@@ -37,7 +37,7 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-10-30T16:29:19-0500"
-		dateModified="2017-08-27T11:26:12-0500"
+		dateModified="2019-06-04T14:39:17-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-core-all:pom.version}" />
@@ -54,15 +54,6 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 				scmUrl="@{documented.scm.url}"
 			>
 				<ul>
-					<li>Updated version of <core:link book="/core/breadcrumblist-json-ld" page="/" />.</li>
-					<li>Updated version of <core:link book="/core/canonical" page="/" />.</li>
-					<li>Updated version of <core:link book="/core/model" page="/" />.</li>
-					<li>Updated version of <core:link book="/core/servlet" page="/" />.</li>
-					<li>Updated version of <core:link book="/core/sitemap" page="/" />.</li>
-					<li>Updated version of <core:link book="/core/style" page="/" />.</li>
-					<li>Updated version of <core:link book="/core/taglib" page="/" />.</li>
-					<li>Updated version of <core:link book="/core/theme-base" page="/" />.</li>
-					<li>Updated version of <core:link book="/core/view-content" page="/" />.</li>
 					<li>New module <core:link book="/core/controller" page="/" />.</li>
 					<li>New module <core:link book="/core/pages" page="/" />.</li>
 					<li>New module <core:link book="/core/pages/jsp" page="/" />.</li>
@@ -75,9 +66,34 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 					<li>New module <core:link book="/core/renderer/servlet" page="/" />.</li>
 					<li>New module <core:link book="/core/resources" page="/" />.</li>
 					<li>New module <core:link book="/core/resources/servlet" page="/" />.</li>
+					<li>Using managed dependencies:
+						<ol>
+							<li>This project uses transitive managed dependencies.</li>
+							<li>This project's managed dependencies may also be imported by other projects.</li>
+						</ol>
+					</li>
 				</ul>
 			</changelog:release>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.4.0"
+			datePublished="2019-04-20T21:54:20-0500"
+			groupId="@{documented.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{documented.scm.url}"
+		>
+			<ul>
+				<li>Minimum Java version changed from 1.6 to 1.7.</li>
+				<li>Updated version of <core:link book="/core/breadcrumblist-json-ld" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/model" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/servlet" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/sitemap" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/taglib" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/view-content" page="/" />.</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"
