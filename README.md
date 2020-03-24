@@ -29,7 +29,7 @@ Convenience POM to include most [SemanticCMS Core](https://github.com/aoindustri
 ## Project Links
 * [Project Home](https://semanticcms.com/core/all/)
 * [Changelog](https://semanticcms.com/core/all/changelog)
-* [Maven Central Repository](https://search.maven.org/#search%7Cgav%7C1%7Cg:%22com.semanticcms%22%20AND%20a:%22semanticcms-core-all%22)
+* [Maven Central Repository](https://search.maven.org/artifact/com.semanticcms/semanticcms-core-all)
 * [GitHub](https://github.com/aoindustries/semanticcms-core-all)
 
 ## Modules Included
