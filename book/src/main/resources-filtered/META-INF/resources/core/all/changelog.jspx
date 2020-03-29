@@ -37,7 +37,7 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-10-30T16:29:19-0500"
-		dateModified="2019-11-02T16:41:06-0500"
+		dateModified="2020-03-29T03:42:03-05:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-core-all:pom.version}" />
@@ -66,10 +66,35 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 					<li>New module <core:link book="/core/renderer/servlet" page="/" />.</li>
 					<li>New module <core:link book="/core/resources" page="/" />.</li>
 					<li>New module <core:link book="/core/resources/servlet" page="/" />.</li>
-					<li>Minimum Java version changed from 1.7 to 1.8.</li>
 				</ul>
 			</changelog:release>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.6.0"
+			datePublished="2020-03-29T03:42:03-05:00"
+			groupId="@{project.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{project.scm.url}"
+		>
+			<ul>
+				<li>Minimum Java version changed from 1.7 to 1.8.</li>
+				<li>
+					Reduced use of property substitutions in <code>pom.xml</code>.
+					This is to help 3rd-party parsers that fail to perform full Maven-compatible substitutions.
+				</li>
+				<li>Updated version of <core:link book="/core/breadcrumblist-json-ld" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/canonical" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/model" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/servlet" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/sitemap" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/style" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/taglib" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/theme-base" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/view-content" page="/" />.</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"
@@ -80,14 +105,14 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 			scmUrl="@{project.scm.url}"
 		>
 			<ul>
-				<li>Updated version of <core:link book="/core/breadcrumblist-json-ld" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/canonical" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/model" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/sitemap" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/theme-base" page="/index.jspx" />.</li>
-				<li>Updated version of <core:link book="/core/view-content" page="/index.jspx" />.</li>
+				<li>Updated version of <core:link book="/core/breadcrumblist-json-ld" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/canonical" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/model" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/servlet" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/sitemap" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/taglib" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/theme-base" page="/" />.</li>
+				<li>Updated version of <core:link book="/core/view-content" page="/" />.</li>
 			</ul>
 		</changelog:release>
 
@@ -106,7 +131,7 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 						<li>This project's managed dependencies may also be imported by other projects.</li>
 					</ol>
 				</li>
-				<li>Updated version of <core:link book="/core/view-content" page="/index.jspx" />.</li>
+				<li>Updated version of <core:link book="/core/view-content" page="/" />.</li>
 			</ul>
 		</changelog:release>
 
