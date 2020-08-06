@@ -37,7 +37,7 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-10-30T16:29:19-0500"
-		dateModified="2020-08-02T14:51:36-05:00"
+		dateModified="2020-08-06T00:41:04-05:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-core-all:pom.version}" />
@@ -55,6 +55,7 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 			>
 				<ul>
 					<li>Updated version of <core:link book="/core/model" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
 				</ul>
 			</changelog:release>
 		</c:if>
