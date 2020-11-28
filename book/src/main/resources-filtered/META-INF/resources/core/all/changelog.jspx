@@ -37,7 +37,7 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-10-30T16:29:19-0500"
-		dateModified="2020-11-18T22:57:33-06:00"
+		dateModified="2020-11-28T01:10:00-06:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-core-all:pom.version}" />
@@ -52,15 +52,24 @@ along with semanticcms-core-all.  If not, see <http://www.gnu.org/licenses />.
 				groupId="@{project.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{project.scm.url}"
-			>
-				<ul>
-					<li>Updated version of <core:link book="/core/model" page="/index.jspx" />.</li>
-					<li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
-					<li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
-					<li>Updated version of <core:link book="/core/theme-base" page="/index.jspx" />.</li>
-				</ul>
-			</changelog:release>
+			/>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.7.0"
+			datePublished="2020-11-28T01:10:00-06:00"
+			groupId="@{project.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{project.scm.url}"
+		>
+			<ul>
+				<li>Updated version of <core:link book="/core/model" page="/index.jspx" />.</li>
+				<li>Updated version of <core:link book="/core/servlet" page="/index.jspx" />.</li>
+				<li>Updated version of <core:link book="/core/taglib" page="/index.jspx" />.</li>
+				<li>Updated version of <core:link book="/core/theme-base" page="/index.jspx" />.</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"
