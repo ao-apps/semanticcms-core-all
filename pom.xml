@@ -22,391 +22,391 @@ You should have received a copy of the GNU Lesser General Public License
 along with semanticcms-core-all.  If not, see <https://www.gnu.org/licenses/>.
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><version>2.0.0-SNAPSHOT</version>
-		<relativePath>../../parent/pom.xml</relativePath>
-	</parent>
+  <parent>
+    <groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><version>2.0.0-SNAPSHOT</version>
+    <relativePath>../../parent/pom.xml</relativePath>
+  </parent>
 
-	<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><version>2.0.0-SNAPSHOT</version>
-	<packaging>bundle</packaging>
+  <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><version>2.0.0-SNAPSHOT</version>
+  <packaging>bundle</packaging>
 
-	<properties>
-		<module.name>com.semanticcms.core.all</module.name>
-		<!-- SonarQube -->
-		<sonar.projectKey>${project.groupId}:${project.artifactId}</sonar.projectKey>
-		<sonar.organization>ao-apps</sonar.organization>
-		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-	</properties>
+  <properties>
+    <module.name>com.semanticcms.core.all</module.name>
+    <!-- SonarQube -->
+    <sonar.projectKey>${project.groupId}:${project.artifactId}</sonar.projectKey>
+    <sonar.organization>ao-apps</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  </properties>
 
-	<name>SemanticCMS Core All²</name>
-	<url>https://semanticcms.com/core/all/</url>
-	<description>Convenience POM to include most SemanticCMS Core features, not including documentation or examples.</description>
-	<inceptionYear>2016</inceptionYear>
+  <name>SemanticCMS Core All²</name>
+  <url>https://semanticcms.com/core/all/</url>
+  <description>Convenience POM to include most SemanticCMS Core features, not including documentation or examples.</description>
+  <inceptionYear>2016</inceptionYear>
 
-	<licenses>
-		<license>
-			<name>GNU General Lesser Public License (LGPL) version 3.0</name>
-			<url>https://www.gnu.org/licenses/lgpl-3.0.txt</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
+  <licenses>
+    <license>
+      <name>GNU General Lesser Public License (LGPL) version 3.0</name>
+      <url>https://www.gnu.org/licenses/lgpl-3.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
 
-	<organization>
-		<name>AO Industries, Inc.</name>
-		<url>https://aoindustries.com/</url>
-	</organization>
+  <organization>
+    <name>AO Industries, Inc.</name>
+    <url>https://aoindustries.com/</url>
+  </organization>
 
-	<developers>
-		<developer>
-			<name>AO Industries, Inc.</name>
-			<email>support@aoindustries.com</email>
-			<url>https://aoindustries.com/</url>
-			<organization>AO Industries, Inc.</organization>
-			<organizationUrl>https://aoindustries.com/</organizationUrl>
-		</developer>
-	</developers>
+  <developers>
+    <developer>
+      <name>AO Industries, Inc.</name>
+      <email>support@aoindustries.com</email>
+      <url>https://aoindustries.com/</url>
+      <organization>AO Industries, Inc.</organization>
+      <organizationUrl>https://aoindustries.com/</organizationUrl>
+    </developer>
+  </developers>
 
-	<scm>
-		<connection>scm:git:git://github.com/ao-apps/semanticcms-core-all.git</connection>
-		<developerConnection>scm:git:git@github.com:ao-apps/semanticcms-core-all.git</developerConnection>
-		<url>https://github.com/ao-apps/semanticcms-core-all</url>
-		<tag>HEAD</tag>
-	</scm>
+  <scm>
+    <connection>scm:git:git://github.com/ao-apps/semanticcms-core-all.git</connection>
+    <developerConnection>scm:git:git@github.com:ao-apps/semanticcms-core-all.git</developerConnection>
+    <url>https://github.com/ao-apps/semanticcms-core-all</url>
+    <tag>HEAD</tag>
+  </scm>
 
-	<issueManagement>
-		<system>GitHub Issues</system>
-		<url>https://github.com/ao-apps/semanticcms-core-all/issues</url>
-	</issueManagement>
+  <issueManagement>
+    <system>GitHub Issues</system>
+    <url>https://github.com/ao-apps/semanticcms-core-all/issues</url>
+  </issueManagement>
 
-	<ciManagement>
-		<system>Jenkins</system>
-		<url>https://jenkins.aoindustries.com/job/ao/job/semanticcms/job/core/job/all/</url>
-	</ciManagement>
-	<!-- Only one allowed in POM:
-	<ciManagement>
-		<system>GitHub Actions</system>
-		<url>https://github.com/ao-apps/semanticcms-core-all/actions</url>
-	</ciManagement>
-	-->
+  <ciManagement>
+    <system>Jenkins</system>
+    <url>https://jenkins.aoindustries.com/job/ao/job/semanticcms/job/core/job/all/</url>
+  </ciManagement>
+  <!-- Only one allowed in POM:
+  <ciManagement>
+    <system>GitHub Actions</system>
+    <url>https://github.com/ao-apps/semanticcms-core-all/actions</url>
+  </ciManagement>
+  -->
 
-	<repositories>
-		<!-- Repository required here, too, so can find parent -->
-		<repository>
-			<id>sonatype-nexus-snapshots</id>
-			<name>Sonatype Nexus Snapshots</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<checksumPolicy>fail</checksumPolicy>
-			</snapshots>
-		</repository>
-	</repositories>
+  <repositories>
+    <!-- Repository required here, too, so can find parent -->
+    <repository>
+      <id>sonatype-nexus-snapshots</id>
+      <name>Sonatype Nexus Snapshots</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <checksumPolicy>fail</checksumPolicy>
+      </snapshots>
+    </repository>
+  </repositories>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId><artifactId>maven-dependency-plugin</artifactId>
-				<configuration>
-					<usedDependencies>
-						<!-- Direct -->
-						<dependency>com.semanticcms:semanticcms-core-model</dependency><!-- Required for module-info.java -->
-						<dependency>com.semanticcms:semanticcms-core-pages</dependency><!-- Required for module-info.java -->
-						<dependency>com.semanticcms:semanticcms-core-renderer</dependency><!-- Required for module-info.java -->
-						<dependency>com.semanticcms:semanticcms-core-resources</dependency><!-- Required for module-info.java -->
-						<dependency>com.semanticcms:semanticcms-core-servlet</dependency><!-- Required for module-info.java -->
-						<dependency>com.semanticcms:semanticcms-core-taglib</dependency><!-- Required for module-info.java -->
-						<!-- Runtime Direct -->
-						<dependency>com.semanticcms:semanticcms-core-breadcrumblist-json-ld</dependency>
-						<dependency>com.semanticcms:semanticcms-core-canonical</dependency>
-						<dependency>com.semanticcms:semanticcms-core-pages-jsp</dependency>
-						<dependency>com.semanticcms:semanticcms-core-pages-jspx</dependency>
-						<dependency>com.semanticcms:semanticcms-core-pages-local</dependency>
-						<dependency>com.semanticcms:semanticcms-core-pages-servlet</dependency>
-						<dependency>com.semanticcms:semanticcms-core-pages-union</dependency>
-						<dependency>com.semanticcms:semanticcms-core-renderer-html</dependency>
-						<dependency>com.semanticcms:semanticcms-core-renderer-servlet</dependency>
-						<dependency>com.semanticcms:semanticcms-core-resources-servlet</dependency>
-						<dependency>com.semanticcms:semanticcms-core-sitemap</dependency>
-						<dependency>com.semanticcms:semanticcms-core-style</dependency>
-						<dependency>com.semanticcms:semanticcms-core-theme-base</dependency>
-						<dependency>com.semanticcms:semanticcms-core-view-content</dependency>
-					</usedDependencies>
-					<ignoredDependencies>
-						<!-- No "module-info.java" in some release builds -->
-						<dependency>com.aoapps:ao-collections</dependency>
-						<dependency>com.semanticcms:semanticcms-core-controller</dependency>
-					</ignoredDependencies>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId><artifactId>maven-dependency-plugin</artifactId>
+        <configuration>
+          <usedDependencies>
+            <!-- Direct -->
+            <dependency>com.semanticcms:semanticcms-core-model</dependency><!-- Required for module-info.java -->
+            <dependency>com.semanticcms:semanticcms-core-pages</dependency><!-- Required for module-info.java -->
+            <dependency>com.semanticcms:semanticcms-core-renderer</dependency><!-- Required for module-info.java -->
+            <dependency>com.semanticcms:semanticcms-core-resources</dependency><!-- Required for module-info.java -->
+            <dependency>com.semanticcms:semanticcms-core-servlet</dependency><!-- Required for module-info.java -->
+            <dependency>com.semanticcms:semanticcms-core-taglib</dependency><!-- Required for module-info.java -->
+            <!-- Runtime Direct -->
+            <dependency>com.semanticcms:semanticcms-core-breadcrumblist-json-ld</dependency>
+            <dependency>com.semanticcms:semanticcms-core-canonical</dependency>
+            <dependency>com.semanticcms:semanticcms-core-pages-jsp</dependency>
+            <dependency>com.semanticcms:semanticcms-core-pages-jspx</dependency>
+            <dependency>com.semanticcms:semanticcms-core-pages-local</dependency>
+            <dependency>com.semanticcms:semanticcms-core-pages-servlet</dependency>
+            <dependency>com.semanticcms:semanticcms-core-pages-union</dependency>
+            <dependency>com.semanticcms:semanticcms-core-renderer-html</dependency>
+            <dependency>com.semanticcms:semanticcms-core-renderer-servlet</dependency>
+            <dependency>com.semanticcms:semanticcms-core-resources-servlet</dependency>
+            <dependency>com.semanticcms:semanticcms-core-sitemap</dependency>
+            <dependency>com.semanticcms:semanticcms-core-style</dependency>
+            <dependency>com.semanticcms:semanticcms-core-theme-base</dependency>
+            <dependency>com.semanticcms:semanticcms-core-view-content</dependency>
+          </usedDependencies>
+          <ignoredDependencies>
+            <!-- No "module-info.java" in some release builds -->
+            <dependency>com.aoapps:ao-collections</dependency>
+            <dependency>com.semanticcms:semanticcms-core-controller</dependency>
+          </ignoredDependencies>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
-	<dependencyManagement>
-		<dependencies>
-			<!-- Direct -->
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-controller</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-taglib</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<!-- Transitive -->
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-collections</artifactId><version>3.0.0${POST-SNAPSHOT}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-concurrent</artifactId><version>4.0.2${POST-SNAPSHOT}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-encoding</artifactId><version>7.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-encoding-servlet</artifactId><version>4.2.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-encoding-taglib</artifactId><version>4.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-fluent-html</artifactId><version>0.7.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-fluent-html-any</artifactId><version>0.7.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-fluent-html-servlet</artifactId><version>0.7.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-hodgepodge</artifactId><version>5.1.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-io-buffer</artifactId><version>4.1.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-lang</artifactId><version>5.2.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-net-types</artifactId><version>2.0.2${POST-SNAPSHOT}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-servlet-filter</artifactId><version>3.0.2${POST-SNAPSHOT}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-servlet-last-modified</artifactId><version>2.0.1${POST-SNAPSHOT}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-servlet-subrequest</artifactId><version>2.0.0${POST-SNAPSHOT}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-servlet-util</artifactId><version>5.2.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-taglib</artifactId><version>7.2.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-tempfiles</artifactId><version>3.0.0${POST-SNAPSHOT}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-tempfiles-servlet</artifactId><version>3.0.0${POST-SNAPSHOT}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-tlds</artifactId><version>2.0.0${POST-SNAPSHOT}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-web-resources-registry</artifactId><version>0.4.0${POST-SNAPSHOT}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-web-resources-servlet</artifactId><version>0.5.0${POST-SNAPSHOT}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.commons</groupId><artifactId>commons-lang3</artifactId><version>3.12.0</version>
-			</dependency>
-			<!-- javaee-web-api-bom: <groupId>javax.el</groupId><artifactId>javax.el-api</artifactId> -->
-			<!-- javaee-web-api-bom: <groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId> -->
-			<!-- javaee-web-api-bom: <groupId>javax.servlet.jsp</groupId><artifactId>javax.servlet.jsp-api</artifactId> -->
-			<dependency>
-				<groupId>joda-time</groupId><artifactId>joda-time</artifactId><version>2.10.14</version>
-			</dependency>
-			<!-- javaee-web-api-bom: <groupId>org.apache.taglibs</groupId><artifactId>taglibs-standard-spec</artifactId> -->
-			<!-- Runtime Direct -->
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-breadcrumblist-json-ld</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-canonical</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jsp</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jspx</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-local</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-servlet</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-union</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-html</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-servlet</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources-servlet</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-theme-base</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
-			</dependency>
-			<!-- Runtime Transitive -->
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-net-path-space</artifactId><version>0.1.0${POST-SNAPSHOT}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-servlet-firewall-api</artifactId><version>0.1.0${POST-SNAPSHOT}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-servlet-firewall-path-space</artifactId><version>0.1.1${POST-SNAPSHOT}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-servlet-firewall-rules</artifactId><version>0.2.0${POST-SNAPSHOT}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-servlet-firewall-webjars</artifactId><version>0.1.0${POST-SNAPSHOT}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-web-resources-renderer</artifactId><version>0.5.0${POST-SNAPSHOT}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-web-resources-taglib</artifactId><version>0.4.0${POST-SNAPSHOT}</version>
-			</dependency>
-			<dependency>
-				<groupId>joda-time</groupId><artifactId>joda-time-jsptags</artifactId><version>1.1.1</version>
-			</dependency>
-			<!-- javaee-web-api-bom: <groupId>org.apache.taglibs</groupId><artifactId>taglibs-standard-impl</artifactId> -->
-			<!-- BOM -->
-			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>javaee-web-api-bom</artifactId><version>7.0.1${POST-SNAPSHOT}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+  <dependencyManagement>
+    <dependencies>
+      <!-- Direct -->
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-controller</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-taglib</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <!-- Transitive -->
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-collections</artifactId><version>3.0.0${POST-SNAPSHOT}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-concurrent</artifactId><version>4.0.2${POST-SNAPSHOT}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-encoding</artifactId><version>7.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-encoding-servlet</artifactId><version>4.2.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-encoding-taglib</artifactId><version>4.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-fluent-html</artifactId><version>0.7.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-any</artifactId><version>0.7.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-servlet</artifactId><version>0.7.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-hodgepodge</artifactId><version>5.1.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-io-buffer</artifactId><version>4.1.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-lang</artifactId><version>5.2.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-net-types</artifactId><version>2.0.2${POST-SNAPSHOT}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-servlet-filter</artifactId><version>3.0.2${POST-SNAPSHOT}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-servlet-last-modified</artifactId><version>2.0.1${POST-SNAPSHOT}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-servlet-subrequest</artifactId><version>2.0.0${POST-SNAPSHOT}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-servlet-util</artifactId><version>5.2.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-taglib</artifactId><version>7.2.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-tempfiles</artifactId><version>3.0.0${POST-SNAPSHOT}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-tempfiles-servlet</artifactId><version>3.0.0${POST-SNAPSHOT}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-tlds</artifactId><version>2.0.0${POST-SNAPSHOT}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-web-resources-registry</artifactId><version>0.4.0${POST-SNAPSHOT}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-web-resources-servlet</artifactId><version>0.5.0${POST-SNAPSHOT}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId><artifactId>commons-lang3</artifactId><version>3.12.0</version>
+      </dependency>
+      <!-- javaee-web-api-bom: <groupId>javax.el</groupId><artifactId>javax.el-api</artifactId> -->
+      <!-- javaee-web-api-bom: <groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId> -->
+      <!-- javaee-web-api-bom: <groupId>javax.servlet.jsp</groupId><artifactId>javax.servlet.jsp-api</artifactId> -->
+      <dependency>
+        <groupId>joda-time</groupId><artifactId>joda-time</artifactId><version>2.10.14</version>
+      </dependency>
+      <!-- javaee-web-api-bom: <groupId>org.apache.taglibs</groupId><artifactId>taglibs-standard-spec</artifactId> -->
+      <!-- Runtime Direct -->
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-breadcrumblist-json-ld</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-canonical</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jsp</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jspx</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-local</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-servlet</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-union</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-html</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-servlet</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources-servlet</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-theme-base</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <dependency>
+        <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+      </dependency>
+      <!-- Runtime Transitive -->
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-net-path-space</artifactId><version>0.1.0${POST-SNAPSHOT}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-servlet-firewall-api</artifactId><version>0.1.0${POST-SNAPSHOT}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-servlet-firewall-path-space</artifactId><version>0.1.1${POST-SNAPSHOT}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-servlet-firewall-rules</artifactId><version>0.2.0${POST-SNAPSHOT}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-servlet-firewall-webjars</artifactId><version>0.1.0${POST-SNAPSHOT}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-web-resources-renderer</artifactId><version>0.5.0${POST-SNAPSHOT}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-web-resources-taglib</artifactId><version>0.4.0${POST-SNAPSHOT}</version>
+      </dependency>
+      <dependency>
+        <groupId>joda-time</groupId><artifactId>joda-time-jsptags</artifactId><version>1.1.1</version>
+      </dependency>
+      <!-- javaee-web-api-bom: <groupId>org.apache.taglibs</groupId><artifactId>taglibs-standard-impl</artifactId> -->
+      <!-- BOM -->
+      <dependency>
+        <groupId>com.aoapps</groupId><artifactId>javaee-web-api-bom</artifactId><version>7.0.1${POST-SNAPSHOT}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
-	<dependencies>
-		<!--
-			TODO: Create new "profiles" modules and move things out of core.
-			Include redirects for book documentation and Maven relocations.
-		-->
-		<!-- Direct -->
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-controller</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-taglib</artifactId>
-		</dependency>
-		<!-- Runtime Direct -->
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-breadcrumblist-json-ld</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-canonical</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jsp</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jspx</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-local</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-servlet</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-union</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-html</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-servlet</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources-servlet</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-theme-base</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-	</dependencies>
+  <dependencies>
+    <!--
+      TODO: Create new "profiles" modules and move things out of core.
+      Include redirects for book documentation and Maven relocations.
+    -->
+    <!-- Direct -->
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-controller</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-taglib</artifactId>
+    </dependency>
+    <!-- Runtime Direct -->
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-breadcrumblist-json-ld</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-canonical</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jsp</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jspx</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-local</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-servlet</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-union</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-html</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-servlet</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-resources-servlet</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-sitemap</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-style</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-theme-base</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
 </project>
