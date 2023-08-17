@@ -30,7 +30,7 @@ along with semanticcms-core-all.  If not, see <https://www.gnu.org/licenses/>.
   </parent>
 
   <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-all</artifactId><version>1.9.3-POST-SNAPSHOT</version>
-  <packaging>bundle</packaging>
+  <packaging>jar</packaging>
 
   <properties>
     <module.name>com.semanticcms.core.all</module.name>
