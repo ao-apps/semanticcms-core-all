@@ -130,21 +130,6 @@ along with semanticcms-core-all.  If not, see <https://www.gnu.org/licenses/>.
             <dependency>com.semanticcms:semanticcms-core-resources</dependency>
             <dependency>com.semanticcms:semanticcms-core-servlet</dependency>
             <dependency>com.semanticcms:semanticcms-core-taglib</dependency>
-            <!-- Runtime Direct -->
-            <dependency>com.semanticcms:semanticcms-core-breadcrumblist-json-ld</dependency>
-            <dependency>com.semanticcms:semanticcms-core-canonical</dependency>
-            <dependency>com.semanticcms:semanticcms-core-pages-jsp</dependency>
-            <dependency>com.semanticcms:semanticcms-core-pages-jspx</dependency>
-            <dependency>com.semanticcms:semanticcms-core-pages-local</dependency>
-            <dependency>com.semanticcms:semanticcms-core-pages-servlet</dependency>
-            <dependency>com.semanticcms:semanticcms-core-pages-union</dependency>
-            <dependency>com.semanticcms:semanticcms-core-renderer-html</dependency>
-            <dependency>com.semanticcms:semanticcms-core-renderer-servlet</dependency>
-            <dependency>com.semanticcms:semanticcms-core-resources-servlet</dependency>
-            <dependency>com.semanticcms:semanticcms-core-sitemap</dependency>
-            <dependency>com.semanticcms:semanticcms-core-style</dependency>
-            <dependency>com.semanticcms:semanticcms-core-theme-base</dependency>
-            <dependency>com.semanticcms:semanticcms-core-view-content</dependency>
           </usedDependencies>
           <ignoredDependencies>
             <!-- No "module-info.java" in some release builds -->
@@ -326,9 +311,9 @@ along with semanticcms-core-all.  If not, see <https://www.gnu.org/licenses/>.
         <groupId>joda-time</groupId><artifactId>joda-time-jsptags</artifactId><version>1.1.1</version>
       </dependency>
       <!-- javaee-web-api-bom: <groupId>org.apache.taglibs</groupId><artifactId>taglibs-standard-impl</artifactId> -->
-      <!-- BOM -->
+      <!-- Imports -->
       <dependency>
-        <groupId>com.aoapps</groupId><artifactId>javaee-web-api-bom</artifactId><version>7.0.1${POST-SNAPSHOT}</version>
+        <groupId>com.aoapps</groupId><artifactId>javaee-web-api-bom</artifactId><version>7.0.1-POST-SNAPSHOT</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -418,6 +403,12 @@ along with semanticcms-core-all.  If not, see <https://www.gnu.org/licenses/>.
     <dependency>
       <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId>
       <scope>runtime</scope>
+    </dependency>
+    <!-- Imports (Reactor build order only) -->
+    <dependency>
+      <groupId>com.aoapps</groupId><artifactId>javaee-web-api-bom</artifactId><version>7.0.1-POST-SNAPSHOT</version>
+      <type>pom</type>
+      <exclusions><exclusion><artifactId>*</artifactId><groupId>*</groupId></exclusion></exclusions>
     </dependency>
   </dependencies>
 </project>
