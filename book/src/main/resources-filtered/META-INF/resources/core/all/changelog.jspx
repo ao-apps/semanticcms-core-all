@@ -37,7 +37,7 @@ along with semanticcms-core-all.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2016-10-30T16:29:19-05:00"
-    dateModified="2023-10-03T17:58:59Z"
+    dateModified="2023-10-07T18:16:37Z"
   >
     <c:set var="latestRelease" value="1.10.0" />
     <c:if test="${
@@ -70,6 +70,10 @@ along with semanticcms-core-all.  If not, see <https://www.gnu.org/licenses/>.
           <li>
             <code>PropertyTag.name</code> attribute is now
             <code>java.lang.Object</code> instead of <code>java.lang.String</code>.
+          </li>
+          <li>
+            Only register servlet at <code>/robots.txt</code> when there is no existing web resource.
+            This allows sites to provide custom <code>/robots.txt</code>.
           </li>
         </ul>
       </changelog:release>
