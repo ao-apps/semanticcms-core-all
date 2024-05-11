@@ -241,7 +241,7 @@ along with semanticcms-core-all.  If not, see <https://www.gnu.org/licenses/>.
       </dependency>
       <!-- Runtime Transitive -->
       <dependency>
-        <groupId>com.aoapps</groupId><artifactId>ao-web-resources-renderer</artifactId><version>0.6.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+        <groupId>com.aoapps</groupId><artifactId>ao-web-resources-renderer</artifactId><version>0.6.0${POST-SNAPSHOT}</version>
       </dependency>
       <dependency>
         <groupId>com.aoapps</groupId><artifactId>ao-web-resources-taglib</artifactId><version>0.6.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
