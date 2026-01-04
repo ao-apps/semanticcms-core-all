@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 /*
  * semanticcms-core-all - Convenience POM to include most SemanticCMS Core features, not including documentation or examples.
- * Copyright (C) 2021, 2022, 2023, 2024, 2025  AO Industries, Inc.
+ * Copyright (C) 2021, 2022, 2023, 2024, 2025, 2026  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -53,7 +53,7 @@ def upstreamProjects = [
   'view-content', // <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-view-content</artifactId>
 
   // BOM
-  '../../oss/javaee-web-api-bom', // <groupId>com.aoapps</groupId><artifactId>javaee-web-api-bom</artifactId>
+  '../../oss/jakartaee-web-profile-bom', // <groupId>com.aoapps</groupId><artifactId>jakartaee-web-profile-bom</artifactId>
 ]
 
 // Java 17
